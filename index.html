@@ -23,10 +23,56 @@
   <body>
     <header>
       <!-- add styled header -->
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <nav class="text-white navbar" style="background-color: #274769">
         <div class="container-fluid">
-          <h1 class="navbar-brand mx-auto mb-0 fs-2 p-3">Weather Dashboard</h1> 
-  </header>
+          <h1 class="navbar-brand mx-auto mb-0 fs-2 p-3">Weather Dashboard</h1>
+        </div>
+      </nav>
+    </header>
+    <main class="container-fluid">
+      <div class="row px-3">
+        <div class="col-md-3 col-sm-12 bg-light">
+          <div>
+            <h4 class="p-md-2">Search for a City:</h4>
+            <form
+              class="row row-cols-lg-auto g-3 align-items-center form-inline"
+              id="search-by-city-form"
+            >
+              <div class="col-12">
+                <div class="input-group">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="city-input"
+                    placeholder="Enter a city name"
+                  />
+                </div>
+              </div>
+              <div class="col-12">
+                <button type="submit" class="btn btn-primary">
+                  <i class="fas fa-search"></i>
+                </button>
+              </div>
+            </form>
+          </div>
+          <div class="my-4" id="searched-cities"></div>
+        </div>
+        <div class="col-md-9 col-sm-12">
+          <div class="row">
+            <div class="col-12" id="current-day"></div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <h2>5-Day Forecast</h2>
+              <div
+                class="d-flex flex-wrap justify-content-around align-items-stretch"
+                id="forecast-cards-container"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"
       integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG"
