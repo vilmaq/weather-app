@@ -1,7 +1,5 @@
 # Weather Dashboard
 
-<h2> Table of Contents </h2>
-
 - [Weather Dashboard](#weather-dashboard)
   - [Description](#description)
   - [Technologies used](#technologies-used)
